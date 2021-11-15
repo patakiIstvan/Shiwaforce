@@ -1,5 +1,5 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cambo&family=Open+Sans&family=Yellowtail&display=swap');
-/* Általában SASS-t használok és nestingelem a children class-eket (és BEM alapján nevezem el őket) */
 
 *,
 *::before,
@@ -136,10 +136,40 @@ main .cards {
 }
 
 main .card-list {
+  position: relative;
+  margin-top: -100px;
+  overflow-x: hidden;
+}
+
+main .card-list .btn-left {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+main .card-list .btn-right {
+  position: absolute;
+  display: none;
+  top: 50%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+main .slider {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 1%;
-  margin-top: -100px;
 }
 
 main .card {
@@ -152,6 +182,11 @@ main .card {
   flex: 1;
   margin-bottom: 35px;
   transition: all 0.2s ease-in-out;
+}
+
+#first-card-clone,
+#last-card-clone {
+  display: none;
 }
 
 main .card::after {
@@ -299,7 +334,7 @@ main .icon {
     display: none !important;
   }
 
-  main .card-list {
+  main .slider {
     flex-wrap: wrap;
   }
 
@@ -309,9 +344,31 @@ main .icon {
 }
 
 @media (max-width: 577px) {
+
+  main .card-list {
+    padding: 0 35px;
+  }
+
+  main .slider {
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
+
+  main .card-list .btn-left,
+  main .card-list .btn-right {
+    display: inline-block;
+  }
+
   main .card {
-    flex: 1 0 60%;
+    flex: 1 0 100%;
     border-radius: 20px;
+    padding: 0 42px;
+    /* margin: 0 35px; */
+  }
+
+  #first-card-clone,
+  #last-card-clone {
+    display: flex;
   }
 
   main .hero h2 {
