@@ -1,6 +1,12 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cambo&family=Open+Sans&family=Yellowtail&display=swap');
 
+/* 
+  font-family: 'Cambo', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Yellowtail', cursive;
+} */
+
 *,
 *::before,
 *::after {
@@ -12,12 +18,6 @@
   text-decoration: none;
   font-family: 'Cambo', serif;
 }
-
-/*  Fontok
-  font-family: 'Cambo', serif;
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Yellowtail', cursive;
-} */
 
 .container {
   width: 100%;
@@ -73,18 +73,18 @@
   flex-direction: column;
 }
 
-.felso .logo h1 {
+.felso #logo-bigFont {
   color: white;
   font-size: 55px;
   margin-bottom: -10px;
 }
 
-.felso .logo span {
+.felso #logo-smallFont {
   color: rgb(125, 125, 125);
   font-size: 14px;
 }
 
-#search-icon {
+.felso #search-icon {
   margin-right: 10px;
   font-size: 40px;
   color: white;
@@ -109,7 +109,7 @@ main .hero {
   align-items: center;
 }
 
-main .hero h2 {
+main .hero h1 {
   color: white;
   font-size: 50px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -304,15 +304,19 @@ main .icon {
   cursor: pointer;
 }
 
-.color-bg {
+main .color-bg {
   padding: 4px;
 }
+
+/* footer */
 
 .footer {
   width: 100%;
   height: 150px;
   background: linear-gradient(rgb(44, 44, 44), rgb(37, 37, 37));
 }
+
+/* Responsiveness  */
 
 @media (max-width: 1200px) {
   .container {
@@ -326,7 +330,7 @@ main .icon {
     height: 100px;
   }
 
-  #search-icon {
+  .felso #search-icon {
     display: block;
   }
 
@@ -371,7 +375,7 @@ main .icon {
     display: flex;
   }
 
-  main .hero h2 {
+  main .hero h1 {
     font-size: 28px;
   }
 
@@ -393,7 +397,7 @@ main .icon {
 }
 
 @media (max-width: 400px) {
-  main .hero h2 {
+  main .hero h1 {
     font-size: 23px;
   }
 

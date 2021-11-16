@@ -1,0 +1,26 @@
+{
+  "name": "weboldal",
+  "version": "1.0.0",
+  "description": "weboldal: https://shiwaforcebeadando.netlify.app/",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patakiIstvan/Shiwaforce.git"
+  },
+  "keywords": [],
+  "author": "Pataki Istvan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patakiIstvan/Shiwaforce/issues"
+  },
+  "homepage": "https://github.com/patakiIstvan/Shiwaforce#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "level4": "^1.0.1"
+  }
+}
