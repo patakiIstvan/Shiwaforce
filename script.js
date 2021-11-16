@@ -1,4 +1,6 @@
 // Természetesen babellel ezt is kompatibilisebbé tenném a régebbi böngészőkkel
+
+// Slider ***********************
 // selectors
 const slider = document.querySelector('.slider');
 const imgs = document.querySelectorAll('.slider .card');
