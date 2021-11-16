@@ -1,12 +1,12 @@
 const postcss = require('gulp-postcss');
 const gulp = require('gulp')
 const autoprefixer = require('autoprefixer');
-const level4 = require('level4');
+const presetEnv = require('postcss-preset-env');
 
 function css() {
     var plugin = [
         autoprefixer(),
-        level4()
+        presetEnv()
     ];
     return gulp.src('./css/*.css')
         .pipe(postcss(plugin))
