@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/patakiIstvan/Shiwaforce#readme",
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "autoprefixer": "^10.4.0",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-postcss": "^9.0.1",
     "pixrem": "^5.0.0",
     "postcss-color-rgba-fallback": "^4.0.0",
