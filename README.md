@@ -11,5 +11,3 @@ weboldal: https://shiwaforcebeadando.netlify.app/
  - [ ] **Slider mobil nézetben**
 
 Egy kicsit igényesebb mobil nézet érdekében a kártyákat egy sliderbe raktam. A slidert Vivaldi és CM browser böngészőben teszteltem.
-## Egyéb megjegyzések
-A gitignore-ral direkt hagytam meg pár mappát, hogy jobban meglehessen vizsgálni a feltöltött kódot. Köszönöm hogy a beadandó újranézése mellett döntöttetek! ( •̀ ω •́ )y
